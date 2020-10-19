@@ -1,0 +1,70 @@
+.WeatherCard{
+  position: relative;
+  height: 100%;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),
+              0px 4px 5px 0px rgba(0,0,0,0.14),
+              0px 1px 10px 0px rgba(0,0,0,0.12);
+  border: 1px solid whitesmoke;
+  background-color: #d9ecf2;
+  padding: 10px;
+  border-radius: 13px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #191919;
+  h3{
+    font-size: 2.7rem;
+  }
+  h6{
+    font-size: 1.3rem;
+    color: #191919;
+  }
+  .WeatherCard-city, .WeatherCard-temp , .WeatherCard-icon{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WeatherCard-temp{
+    h3{
+      font-size: 5rem;
+    }
+    span{
+      color: #11998e;
+      font-size: 1.7rem;
+    }
+    sup{
+      color: #e7305b;
+    }
+  }
+  .WeatherCard-icon{
+    .MuiSvgIcon-root{
+      font-size: 5rem;
+    }
+  }
+  .WeatherCard-knowMore{
+    z-index: 1000;
+  }
+}
+
+.WeatherCard-frontFlip{
+}
+.WeatherCard-backFlip{
+  overflow: auto;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+}

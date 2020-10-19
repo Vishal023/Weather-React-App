@@ -1,0 +1,21 @@
+.App{
+    height: 100vh;
+    background-color: #11998e;
+}
+.App-header{
+    height: 10vh;
+}
+.App-body{
+    height: 75vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App-footer{
+    height: 15vh;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
